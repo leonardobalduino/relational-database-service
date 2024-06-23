@@ -1,0 +1,39 @@
+version: "2.4"
+
+services:
+  mongo:
+    image: mongo:6.0
+    hostname: mongo
+    ports:
+      - "27017:27017"
+    expose:
+      - 27017
+
+  redis:
+    image: redis:7.2.5-alpine
+    hostname: redis
+    ports:
+      - "6379:6379"
+    expose:
+      - 6379
+
+  rabbitmq:
+    image: rabbitmq:3.13.3-management-alpine
+    hostname: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+    ports:
+      - "5672:5672"
+      - "15671:15671"
+      - "25676:25676"
+      - "15672:15672"
+    expose:
+      - 5672
+      - 15671
+      - 25676
+      - 15672
+
+networks:
+  default:
+    name: dbaas

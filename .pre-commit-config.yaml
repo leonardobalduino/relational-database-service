@@ -1,0 +1,13 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+default_language_version:
+    python: python3.12
+repos:
+  - repo: local
+    hooks:
+      - id: lint-check
+        name: lint-check
+        entry: make lint-check
+        language: system
+        types: [python]
+        pass_filenames: false
