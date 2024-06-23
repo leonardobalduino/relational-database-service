@@ -7,6 +7,28 @@ Esse repositório tempos 2 projetos:
     - Beat
 - Compute Xaas Api
 
+## Estrutura do projeto
+![](static/structure.png)
+
+### Estrutura de pastas e arquivos
+- .env: Arquivo de configuração de variáveis ​​de ambiente.
+- .gitignore: Especifica arquivos e diretórios a serem ignorados pelo Git.
+- .pre-commit-config.yaml: Configuração para ganchos de pré-confirmação.
+- black.toml: Configuração para o formatador de código.
+- computexaas_api/: API de provisionamento de VMs.
+- conftest.py: Configuração para testes.
+- dbaas/: API/Worker/Beat Gerenciador de banco de dados como serviço.
+- devtools/: Ferramentas e scripts do desenvolvedor..
+- docker-compose.yml: Configuração do Docker Compose para implantação em contêiner.
+- flake8.ini: Configuração para o linter flake8.
+Makefile: Comandos de construção e gerenciamento.
+- migrations/: Scripts de migração de banco de dados.
+- pytest.ini: Configuração para pytest.
+- requirements.txt: Dependências do Python.
+- static/: Static files (e.g., PNG, JPG, SVG).
+- test/: Casos de teste e utilitários de teste.
+
+
 ## Pré-requisitos
 Esse repositório requer o python na versão `3.12`
 
@@ -71,5 +93,9 @@ make coverage
 - Swagger -> http://localhost:8001/api/swagger
 - Documentação -> http://localhost:8001/api/docs
 
+# RabbitMQ
+- Dashboard -> http://localhost:15672
+- user -> user
+- password -> password
 
-![](estatico/api.png)
+
