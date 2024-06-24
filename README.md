@@ -2,10 +2,12 @@
 
 Esse repositório tempos 2 projetos:
 - DBaas
-    - API
-    - Worker
-    - Beat
-- Compute Xaas Api
+    - [API](#dbaas-api)
+    - [Worker](#dbaas-worker)
+    - [Beat](#dbaas-beat)
+
+- Compute Xaas
+    - [API](#computexaas-api)
 
 ## Estrutura do projeto
 ![](static/structure.png)
@@ -85,17 +87,31 @@ make test
 make coverage
 ```
 
-# Database as a Service API
+# Database as a Service
+## dbaas-api
 - Swagger -> http://localhost:8000/api/swagger
 - Documentação -> http://localhost:8000/api/docs
 
-# Compute XaaS API
+![](static/dbaas-api.png)
+
+## dbaas-worker
+![](static/dbaas-worker.png)
+
+## dbaas-beat
+![](static/dbaas-beat.png)
+
+# Compute XaaS
+## computexaas-api
 - Swagger -> http://localhost:8001/api/swagger
 - Documentação -> http://localhost:8001/api/docs
 
+![](static/computexaas-api.png)
+
 # RabbitMQ
-- Dashboard -> http://localhost:15672
+- Dashboard -> http://localhost:15672/#/queues
 - user -> user
 - password -> password
+
+![](static/rabbitmq.png)
 
 
